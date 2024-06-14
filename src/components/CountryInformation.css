@@ -1,0 +1,133 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	background-color: #e0f7fa;
+}
+
+.container {
+	max-width: 650px;
+	margin: 20px;
+	width: calc(100% - 40px);
+	padding: 40px;
+	border-radius: 12px;
+	box-sizing: border-box;
+	background: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+	padding: 12px;
+	border: 1px solid #b0bec5;
+	border-radius: 8px;
+	outline: none;
+	font-size: 16px;
+	width: calc(100% - 140px);
+}
+
+#search-btn {
+	padding: 12px 24px;
+	outline: none;
+	border: none;
+	margin-left: 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	background: #00796b;
+	color: #ffffff;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+	background-color: #004d40;
+}
+
+#result img {
+	width: 100%;
+	margin-top: 20px;
+	height: auto;
+	border-radius: 8px;
+	border: 1px solid #b0bec5;
+}
+
+#result h2 {
+	margin-top: 20px;
+	font-size: 24px;
+	color: #00796b;
+}
+
+.dataRow {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.dataRow h4 {
+	margin: 0;
+	font-size: 18px;
+	color: #004d40;
+}
+
+.dataRow span {
+	display: block;
+	margin-top: 5px;
+	font-size: 14px;
+	color: #546e7a;
+	max-width: 100%;
+}
+/* CountryInformation.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+}
+
+#countryName {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#search-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+.dropdown-scroll {
+    max-height: 150px;
+    overflow-y: auto;
+}
